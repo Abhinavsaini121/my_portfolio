@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
+
+.marquee-container {
+  width: 110%; /* Screen se thoda bahar rakha hai taaki rotation me corners na dikhen */
+  margin-left: -5%;
+  background-color: #ff5e00; /* Bright Orange */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  
+  /* Ye hai aapka "Bend/Tilt" effect (Left se niche ki side) */
+  transform: rotate(-3deg); 
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 20;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 20s linear infinite; /* Loop speed yahan se control karein */
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #000000; /* Black text on Orange bg */
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.marquee-star {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-top: 10px; /* Star ko center align karne ke liye */
+}
+
+/* Loop Animation Logic */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Half track move hote hi loop repeat hoga */
+  }
+}
+
+/* Hover par thoda slow ho jaye (optional but cool) */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .marquee-container {
+    height: 60px;
+    transform: rotate(-4deg); /* Mobile pe thoda zyada tilt achha lagta hai */
+  }
+  .marquee-text {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+}

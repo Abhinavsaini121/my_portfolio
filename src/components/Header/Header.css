@@ -1,0 +1,63 @@
+/* Clean Coding Font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+/* Resetting margins for the whole app */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fixed-header {
+  position: fixed; /* Header ko lock karne ke liye */
+  top: 0;          /* Top se zero margin */
+  left: 0;         /* Left se zero margin */
+  width: 100%;     /* Full screen width */
+  height: 70px;
+  background-color: #000000; /* Solid Black Background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; 
+  z-index: 9999;   /* Sabse upar dikhne ke liye */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle clean line */
+}
+
+.logo-text {
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+}
+
+.icon-item {
+  color: #ffffff;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Coding style hover: halka sa glow aur lift */
+.icon-item:hover {
+  color: #ff5e00; /* Hero section wala orange match karne ke liye */
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive padding */
+@media (max-width: 768px) {
+  .fixed-header {
+    padding: 0 20px;
+  }
+  .logo-text {
+    font-size: 1rem;
+  }
+}

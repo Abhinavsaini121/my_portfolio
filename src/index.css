@@ -1,0 +1,33 @@
+/* Global Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Dark Black Background */
+  overflow-x: hidden;
+}
+
+/* Stars Background Container */
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Background me rahega */
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+}
+
+/* Blinking Dots Logic */
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: blink var(--duration) infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
