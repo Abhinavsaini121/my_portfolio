@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@500&display=swap');
+
+.about-ui-container {
+  display: flex;
+  width: 100%;
+  margin-top: -100px;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Left Side Styling */
+.about-ui-left {
+  flex: 1;
+  background-color: #111111; /* Dark Gray from the image */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.watermark-bg {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 15rem;
+  color: rgba(255, 255, 255, 0.03);
+  transform: rotate(-25deg);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.exp-display {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.big-num {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(8rem, 15vw, 12rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.15); /* Slightly translucent */
+  margin: 0;
+  line-height: 1;
+}
+
+.exp-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  color: #888;
+}
+
+.exp-label span {
+  display: block;
+}
+
+/* Right Side Styling */
+.about-ui-right {
+  flex: 1.2;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-tag {
+  font-family: 'JetBrains Mono', monospace;
+  color: #ff5e00;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.about-main-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: -2px;
+}
+
+.orange-text {
+  color: #ff5e00;
+}
+
+.about-description {
+  max-width: 550px;
+}
+
+.about-description p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.about-description strong {
+  color: #fff;
+}
+
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .about-ui-container {
+    flex-direction: column;
+  }
+  .about-ui-left {
+    min-height: 400px;
+  }
+  .about-ui-right {
+    padding: 60px 5%;
+  }
+  .big-num {
+    font-size: 8rem;
+  }
+}

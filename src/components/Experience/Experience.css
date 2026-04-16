@@ -1,0 +1,115 @@
+.exp-section {
+  padding: 100px 10%;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.orange-text {
+  color: #ff5e00;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.exp-item {
+  border-left: 2px solid #333;
+  padding-left: 30px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover par line orange ho jayegi */
+.exp-item:hover {
+  border-left: 2px solid #ff5e00;
+}
+
+/* Timeline dot */
+.exp-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.exp-item:hover::before {
+  background-color: #ff5e00;
+  box-shadow: 0 0 10px #ff5e00;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.exp-role {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.exp-company {
+  color: #ff5e00;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.exp-meta {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.exp-meta span {
+  display: block;
+}
+
+.exp-points {
+  list-style: none;
+  padding: 0;
+}
+
+.exp-points li {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.exp-points li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #ff5e00;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .exp-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .exp-meta {
+    text-align: left;
+  }
+  .exp-section {
+    padding: 60px 5%;
+  }
+}
