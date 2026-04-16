@@ -5,6 +5,8 @@ import Marquee from './Marquee/Marquee'
 import Experience from './Experience/Experience'
 import About from './About/About'
 import Footer from './Footer/Footer'
+import Projects from './Projects/Projects'
+import Contact from './Contact/Contact'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
         <Marquee/>
         <About/>
         <Experience/>
+        <Projects/>
+        <Contact/>
         <Footer/>
     </>
   )

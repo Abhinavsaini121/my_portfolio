@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=JetBrains+Mono:wght@500;700&display=swap');
+
+.contact-section {
+  padding: 100px 10%;
+  background-color: #000;
+  color: #fff;
+  min-height: 80vh;
+}
+
+.contact-container {
+  display: flex;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Info Side */
+.contact-info {
+  flex: 1;
+}
+
+.section-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.contact-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin: 30px 0 50px 0;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+  color: #ff5e00;
+}
+
+.detail-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.detail-link, .detail-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.detail-link:hover {
+  color: #ff5e00;
+}
+
+/* Form Side */
+.contact-form-wrapper {
+  flex: 1.2;
+  background: #0a0a0a;
+  padding: 50px;
+  border: 1px solid #1a1a1a;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: #ff5e00;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  border-color: #ff5e00;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #ff5e00;
+  color: #000;
+  border: none;
+  padding: 18px 40px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  transform: translateY(-5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 968px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .contact-form-wrapper {
+    padding: 30px;
+  }
+}
