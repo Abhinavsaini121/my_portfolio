@@ -12,7 +12,7 @@ const Header = () => {
       <div className="social-links">
         <a href="https://github.com" target="_blank" rel="noreferrer" className="icon-item"><FaGithub /></a>
         <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="icon-item"><FaLinkedinIn /></a>
-        <a href="mailto:hello@example.com" className="icon-item"><HiOutlineMail /></a>
+        <a href="mailto:abhisaini908466@gmail.com" className="icon-item"><HiOutlineMail /></a>
       </div>
     </nav>
   );
