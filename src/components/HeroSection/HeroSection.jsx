@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './HeroSection.css';
 import { FiDownload } from 'react-icons/fi'; // Download icon ke liye
-import resumeFile from '../../assets/Abhinav resume_.pdf'; 
+// import resumeFile from '../../assets/Abhinav resume_.pdf'; 
+import resumeFile from '../../assets/Abhinav_resume.pdf'; 
 
 const HeroSection = () => {
   const [stars, setStars] = useState([]);

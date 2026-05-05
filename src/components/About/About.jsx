@@ -8,7 +8,7 @@ const AboutUI = () => {
       <div className="about-ui-left">
         <div className="watermark-bg">DEV DEV DEV DEV</div>
         <div className="exp-display">
-          <h1 className="big-num">1+</h1>
+          <h1 className="big-num">2+</h1>
           <div className="exp-label">
             <span>YEARS OF</span>
             <span>EXPERIENCE</span>
@@ -31,7 +31,7 @@ const AboutUI = () => {
             seamless. This curiosity turned into a passion for <strong>Frontend Engineering</strong>.
           </p>
           <p>
-            With 1+ year of experience, I've learned that clean code isn't just a requirement; 
+            With 2+ year of experience, I've learned that clean code isn't just a requirement; 
             it's a tool for evolution. My childhood shaped me into the person and the engineer 
             I am today—always asking 'why' before 'how'.
           </p>
