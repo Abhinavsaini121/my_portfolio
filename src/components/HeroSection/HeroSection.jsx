@@ -48,7 +48,7 @@ const HeroSection = () => {
           <h1 className="name-outline">ABHINAV SAINI</h1>
           <div className="animated-strike"></div>
         </div>
-        <p className="role-tag">FRONT-END ENGINEER</p>
+        <p className="role-tag">FRONT-END Web DEVELOPER</p>
         
         {/* RESUME BUTTON ADDED HERE */}
         <a 
