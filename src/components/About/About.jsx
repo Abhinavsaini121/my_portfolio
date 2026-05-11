@@ -8,7 +8,7 @@ const AboutUI = () => {
       <div className="about-ui-left">
         <div className="watermark-bg">DEV DEV DEV DEV</div>
         <div className="exp-display">
-          <h1 className="big-num">2+</h1>
+          <h1 className="big-num">1+</h1>
           <div className="exp-label">
             <span>YEARS OF</span>
             <span>EXPERIENCE</span>

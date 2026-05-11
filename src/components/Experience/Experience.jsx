@@ -19,8 +19,8 @@ const Experience = () => {
       // role: "Web Development Intern",
       role: "Web Developer",
       company: "IT Doubt",
-      // duration: "Dec 2024 – Jan 2025",
-      duration: "Jan 2024 – Jan 2025",
+      duration: "Dec 2024 – Jan 2025",
+      // duration: "Jan 2024 – Jan 2025",
       location: "Remote",
       points: [
         "Constructed intuitive user interfaces utilizing HTML5, CSS3, and JavaScript.",
